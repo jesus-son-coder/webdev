@@ -9,6 +9,7 @@
   <!-- Librairies de Style -->
   <!-- ------------------- -->
   <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/jquery/jquery-ui.css">
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -23,7 +24,8 @@
       Amaury Martin <br>
       <div id="divAge">20/11/1984</div>
       E-mail:
-      <a href="mailto:amartin@gmail.fr">amartin@gmail.com</a>
+      <a href="mailto:amartin@gmail.fr">amartin@gmail.com</a><br>
+      <a href="#" id="dialogPopin">Cliquez ici pour déclencher une Popin jQuery</a>
   </div>
   <div id="titreCV" class="titreCV">
       Développeur web
@@ -49,11 +51,25 @@
   - Photoshop <br>
   - Pratique du tennis <br>
 
+
+
+    <div id="dialog" title="Hello World">
+        <p>Hello, je suis votre nouvelle boîte de dialogue !<br> The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    </div>
+
 </div>
 
   <!-- Librairies JavaScrip -->
   <!-- -------------------- -->
-  <script src="./js/jquery/jquery_3_3_1.js"></script>
-  <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/jquery/jquery_3_3_1.js"></script>
+    <script src="./js/jquery/jquery-ui.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        $('#dialogPopin').click(function(){
+            $( "#dialog" ).dialog();
+        })
+    </script>
 </body>
 </html>
